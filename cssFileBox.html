@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title> CSS File Box </title>
+    </head>
+
+    <style type="text/css">
+        .filebox-container {
+            display: flex;
+        }
+
+        .filebox-item {
+            width: 100px;
+            margin: 10px;
+            border-color: #dfdfdf;
+            border: 3px solid #333;
+        }
+
+        .filebox-item-1 {
+            min-height: 100px;
+            flex-shrink: 0;
+        }
+
+        .filebox-item-2 {
+            min-height: 200px;
+            /* flex-grow: 1; */
+            align-self: center;
+        }
+
+        .filebox-item-3 {
+            min-height: 300px;
+        }
+    </style>
+
+    <body>
+        <div class="filebox-container">
+            <div class="filebox-item filebox-item-1"></div>
+            <div class="filebox-item filebox-item-2"></div>
+            <div class="filebox-item filebox-item-3"></div>
+        </div>
+    </body>
+
+</html>
